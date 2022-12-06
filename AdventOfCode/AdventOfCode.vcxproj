@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +121,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,26 +131,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AdventOfCodeDayChallenges.cpp" />
-    <ClCompile Include="Day3.cpp" />
-    <ClCompile Include="Day4.cpp" />
-    <ClCompile Include="Day5.cpp" />
+    <ClCompile Include="src\AdventOfCodeDayChallenges.cpp" />
+    <ClCompile Include="src\Day3.cpp" />
+    <ClCompile Include="src\Day4.cpp" />
+    <ClCompile Include="src\Day5.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="UtilFuncs.cpp" />
+    <ClCompile Include="src\UtilFuncs.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AdventOfCodeDayChallenges.hpp" />
-    <ClInclude Include="Day3_Input.txt" />
-    <ClInclude Include="Day3.hpp" />
-    <ClInclude Include="Day4.hpp" />
-    <ClInclude Include="Day5.hpp" />
-    <ClInclude Include="UtilFuncs.hpp" />
+    <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp" />
+    <ClInclude Include="Input\Day3_Input.txt" />
+    <ClInclude Include="Include\Day3.hpp" />
+    <ClInclude Include="Include\Day4.hpp" />
+    <ClInclude Include="Include\Day5.hpp" />
+    <ClInclude Include="Include\UtilFuncs.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Day4_Input.txt" />
+    <None Include="Input\Day4_Input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day5_Input.txt" />
+    <Text Include="Input\Day5_Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

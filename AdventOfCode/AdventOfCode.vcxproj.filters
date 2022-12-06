@@ -21,49 +21,49 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day3.cpp">
+    <ClCompile Include="src\Day3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AdventOfCodeDayChallenges.cpp">
+    <ClCompile Include="src\AdventOfCodeDayChallenges.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day4.cpp">
+    <ClCompile Include="src\Day4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UtilFuncs.cpp">
+    <ClCompile Include="src\UtilFuncs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day5.cpp">
+    <ClCompile Include="src\Day5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day3.hpp">
+    <ClInclude Include="Include\Day3.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AdventOfCodeDayChallenges.hpp">
+    <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UtilFuncs.hpp">
+    <ClInclude Include="Include\UtilFuncs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day4.hpp">
+    <ClInclude Include="Include\Day4.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day3_Input.txt">
+    <ClInclude Include="Input\Day3_Input.txt">
       <Filter>Input</Filter>
     </ClInclude>
-    <ClInclude Include="Day5.hpp">
+    <ClInclude Include="Include\Day5.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Day4_Input.txt">
+    <None Include="Input\Day4_Input.txt">
       <Filter>Input</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day5_Input.txt">
+    <Text Include="Input\Day5_Input.txt">
       <Filter>Input</Filter>
     </Text>
   </ItemGroup>

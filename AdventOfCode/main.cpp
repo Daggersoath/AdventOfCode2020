@@ -3,7 +3,7 @@
 #include "Day5.hpp"
 
 #define RUN_DAY(day, res1, res2) Day##day d##day;\
-    d##day.Run("Day"#day"_Input.txt");\
+    d##day.Run("Input/Day"#day"_Input.txt");\
     std::string_view d##day##ExpectedResults[]{res1, res2};\
     d##day.Verify(d##day##ExpectedResults);
 
