@@ -1,3 +1,5 @@
+#include "Day1.hpp"
+#include "Day2.hpp"
 #include "Day3.hpp"
 #include "Day4.hpp"
 #include "Day5.hpp"
@@ -9,6 +11,8 @@
 
 int main()
 {
+    RUN_DAY(1, "69883", "207576");
+    RUN_DAY(2, "12156", "10835");
     RUN_DAY(3, "7581", "2525");
     RUN_DAY(4, "453", "919");
     RUN_DAY(5, "ZWHVFWQWW", "HZFZCCWWV");

@@ -131,6 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Day1.cpp" />
+    <ClCompile Include="src\Day2.cpp" />
     <ClCompile Include="src\AdventOfCodeDayChallenges.cpp" />
     <ClCompile Include="src\Day3.cpp" />
     <ClCompile Include="src\Day4.cpp" />
@@ -140,16 +142,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp" />
+    <ClInclude Include="Include\Day2.hpp" />
     <ClInclude Include="Input\Day3_Input.txt" />
     <ClInclude Include="Include\Day3.hpp" />
     <ClInclude Include="Include\Day4.hpp" />
     <ClInclude Include="Include\Day5.hpp" />
     <ClInclude Include="Include\UtilFuncs.hpp" />
+    <ClInclude Include="Include\Day1.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Input\Day4_Input.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Input\Day1_Input.txt" />
+    <Text Include="Input\Day2_Input.txt" />
     <Text Include="Input\Day5_Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
