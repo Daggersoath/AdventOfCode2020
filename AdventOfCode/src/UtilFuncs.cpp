@@ -47,3 +47,25 @@ char FindCommonChar(std::vector<std::string_view> strVec)
 
     return commonChars.empty() ? 0 : commonChars[0];
 }
+
+bool IsSequenceUnique(std::string_view sequence)
+{
+    const size_t seqLen = sequence.length();
+    for (size_t i = 0; i < seqLen; ++i)
+        for (size_t j = i + 1; j < seqLen; ++j)
+            if (sequence[i] == sequence[j])
+                return false;
+
+    return true;
+}
+
+size_t FirstUniqueSequenceLocation(std::string_view str, size_t seqLen)
+{
+    const size_t start = seqLen - 1;
+    size_t index = start;
+    for (; index < str.length(); ++index)
+        if (IsSequenceUnique(str.substr(index - start, seqLen)))
+            break;
+
+    return index;
+}

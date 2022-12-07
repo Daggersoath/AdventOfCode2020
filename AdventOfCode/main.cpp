@@ -3,6 +3,7 @@
 #include "Day3.hpp"
 #include "Day4.hpp"
 #include "Day5.hpp"
+#include "Day6.hpp"
 
 #define RUN_DAY(day, res1, res2) Day##day d##day;\
     d##day.Run("Input/Day"#day"_Input.txt");\
@@ -16,6 +17,7 @@ int main()
     RUN_DAY(3, "7581", "2525");
     RUN_DAY(4, "453", "919");
     RUN_DAY(5, "ZWHVFWQWW", "HZFZCCWWV");
+    RUN_DAY(6, "1140", "3495");
 
     return 0;
 }
