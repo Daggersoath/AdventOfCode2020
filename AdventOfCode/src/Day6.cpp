@@ -10,12 +10,6 @@ void Day6::ParseInput(std::string_view input)
 
 void Day6::ProcessChallengeOne()
 {
-
-    size_t i = 3;
-    for (; i < mInput.length(); ++i)
-        if (IsSequenceUnique(mInput.substr(i-3, 4)))
-            break;
-
     mResults[0] = std::to_string(FirstUniqueSequenceLocation(mInput, 4) + 1);
 }
 
