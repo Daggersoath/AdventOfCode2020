@@ -10,9 +10,9 @@ public:
 
 private:
     struct Move {
-        const unsigned long Count;
-        const unsigned long Source;
-        const unsigned long Dest;
+        const std::uint64_t Count;
+        const std::uint64_t Source;
+        const std::uint64_t Dest;
     };
 
     virtual void ParseInput(std::string_view input) override;

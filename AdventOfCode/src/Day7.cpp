@@ -9,12 +9,6 @@
 
 #include "Directory.h"
 
-struct Command {
-	std::string_view name;
-	StrViewVec args;
-	StrViewVec output;
-};
-
 Day7::Day7()
 	: AdventOfCodeDayChallenges(7), mRootDir(std::make_shared<Directory>(nullptr)) {}
 
@@ -48,7 +42,7 @@ void Day7::ProcessChallengeOne()
 	mRootDir->GetSize();
 
 	constexpr auto max_size = 100000ul;
-	unsigned long totalSize = 0;
+	std::uint64_t totalSize = 0;
 	mRootDir->Find(
 		[](const Directory& d) {return d.GetSize() <= max_size; },
 		[&totalSize](const Directory& d) { totalSize += d.GetSize(); });
@@ -63,7 +57,7 @@ void Day7::ProcessChallengeTwo()
 	const auto currentAvail = total_disk - mRootDir->GetSize();
 	const auto neededSize = total_needed_size - currentAvail;
 
-	unsigned long minSize = mRootDir->GetSize();
+	std::uint64_t minSize = mRootDir->GetSize();
 	mRootDir->Find(
 		[neededSize, &minSize](const Directory& d) {
 			return d.GetSize() >= neededSize

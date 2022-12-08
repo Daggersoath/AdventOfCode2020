@@ -11,7 +11,7 @@ namespace Char {
 namespace String {
     using view = std::string_view;
 
-    unsigned long ToULong(std::string_view str);
+    std::uint64_t ToUint64(std::string_view str);
 
     std::vector<view> Split(view input, view del);
 

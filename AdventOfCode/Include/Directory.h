@@ -8,8 +8,8 @@ public:
 
 	void Parse(std::shared_ptr<Directory> self, StrViewVec lsOutput);
 
-	unsigned long GetSize();
-	unsigned long GetSize() const { return mSize; }
+	std::uint64_t GetSize();
+	std::uint64_t GetSize() const { return mSize; }
 	std::shared_ptr<Directory> GetDir(std::string_view name);
 
 	template<typename ValidationFunc, typename Callback>
@@ -24,7 +24,7 @@ public:
 private:
 
 	std::unordered_map<std::string_view, std::shared_ptr<Directory>> mChildren;
-	std::vector<std::pair<unsigned long, std::string_view>> mFiles;
+	std::vector<std::pair<std::uint64_t, std::string_view>> mFiles;
 	std::shared_ptr<Directory> mParent;
-	unsigned long mSize = 0;
+	std::uint64_t mSize = 0;
 };

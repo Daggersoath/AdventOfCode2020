@@ -12,7 +12,7 @@ void Day4::ParseInput(std::string_view input)
         for (const auto& section : pairSections)
         {
             auto startEnd = String::Split(section, "-");
-            mCleaningSections.emplace_back(String::ToULong(startEnd[0]), String::ToULong(startEnd[1]));
+            mCleaningSections.emplace_back(String::ToUint64(startEnd[0]), String::ToUint64(startEnd[1]));
         }
     }
 }

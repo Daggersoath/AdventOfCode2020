@@ -19,20 +19,20 @@ void Day1::ParseInput(std::string_view input)
     }
 }
 
-unsigned long Day1::GetTotalFromLargestBackpacks(int count)
+uint64_t Day1::GetTotalFromLargestBackpacks(int count)
 {
-    std::vector<unsigned long> backpackTotals;
+    std::vector<std::uint64_t> backpackTotals;
     for (const auto& backpack : mBackpacks)
     {
-        unsigned long total = 0;
+        std::uint64_t total = 0;
         for (const auto& item : backpack)
-            total += String::ToULong(item);
+            total += String::ToUint64(item);
         backpackTotals.push_back(total);
     }
 
     std::sort(backpackTotals.begin(), backpackTotals.end());
 
-    return std::accumulate(backpackTotals.end() - count, backpackTotals.end(), 0);
+    return std::accumulate(backpackTotals.end() - count, backpackTotals.end(), 0ull);
 }
 
 void Day1::ProcessChallengeOne()

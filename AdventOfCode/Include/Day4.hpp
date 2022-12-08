@@ -14,14 +14,14 @@ private:
     void ProcessChallengeTwo() override;
 
     struct CleaningSection {
-        unsigned int mStart = 0;
-        unsigned int mEnd = 0;
+        uint64_t mStart = 0;
+        uint64_t mEnd = 0;
 
         inline bool Contains(CleaningSection& other) const
         {
             return other.mStart >= mStart && other.mEnd <= mEnd;
         }
-        inline bool PartiallyContains(CleaningSection& other)
+        inline bool PartiallyContains(CleaningSection& other) const
         {
             return other.mStart >= mStart && other.mStart <= mEnd
                 || other.mEnd >= mStart && other.mEnd <= mEnd;

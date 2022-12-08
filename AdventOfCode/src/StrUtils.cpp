@@ -4,7 +4,7 @@
 
 using namespace String;
 
-unsigned long String::ToULong(view str)
+std::uint64_t String::ToUint64(view str)
 {
     int out;
     const std::from_chars_result result = std::from_chars(str.data(), str.data() + str.size(), out);

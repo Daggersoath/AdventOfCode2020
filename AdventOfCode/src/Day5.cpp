@@ -32,7 +32,7 @@ void Day5::ParseMoves(std::string_view input)
     for (const auto& move : String::Split(input, "\n"))
     {
         auto components = String::Split(move, " ");
-        mMoves.emplace_back(String::ToULong(components[1]), String::ToULong(components[3]) - 1, String::ToULong(components[5]) - 1);
+        mMoves.emplace_back(String::ToUint64(components[1]), String::ToUint64(components[3]) - 1, String::ToUint64(components[5]) - 1);
     }
 }
 

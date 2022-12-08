@@ -10,7 +10,7 @@ void Directory::Parse(std::shared_ptr<Directory> self, StrViewVec lsOutput)
 	{
 		auto entryComponents = String::Split(entry, " ");
 		if (entryComponents[0] != "dir")
-			mFiles.push_back({ String::ToULong(entryComponents[0]), entryComponents[1] });
+			mFiles.push_back({ String::ToUint64(entryComponents[0]), entryComponents[1] });
 		else if (mChildren.find(entryComponents[1]) == mChildren.end())
 			mChildren[entryComponents[1]] = std::make_shared<Directory>(self);
 	}
@@ -25,7 +25,7 @@ std::shared_ptr<Directory> Directory::GetDir(std::string_view name)
 	throw std::runtime_error("No such directory!");
 }
 
-unsigned long Directory::GetSize()
+std::uint64_t Directory::GetSize()
 {
 	mSize = 0;
 	for (auto it = mChildren.begin(); it != mChildren.end(); ++it)

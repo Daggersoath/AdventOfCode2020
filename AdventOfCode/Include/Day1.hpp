@@ -10,7 +10,7 @@ public:
 private:
     virtual void ParseInput(std::string_view input) override;
 
-    unsigned long GetTotalFromLargestBackpacks(int count);
+    uint64_t GetTotalFromLargestBackpacks(int count);
 
     void ProcessChallengeOne() override;
     void ProcessChallengeTwo() override;

@@ -11,7 +11,7 @@ void Day3::ParseInput(std::string_view input)
 
 void Day3::ProcessChallengeOne()
 {
-    unsigned long long sum = 0;
+    std::uint64_t sum = 0;
 
     for (const auto& rucksack : mRucksacks)
     {
@@ -26,7 +26,7 @@ void Day3::ProcessChallengeOne()
 
 void Day3::ProcessChallengeTwo()
 {
-    unsigned long long sum = 0;
+    std::uint64_t sum = 0;
     for (size_t i = 0; i < mRucksacks.size(); i += 3)
     {
         auto commonItem = String::FindCommonChar({ mRucksacks.begin() + i, mRucksacks.begin() + i + 3 });
