@@ -1,12 +1,13 @@
 #include "Day2.hpp"
 
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 #include <array>
+#include <string>
 
 void Day2::ParseInput(std::string_view input)
 {
-	for (const auto& play : SplitStringToVector(input, "\n"))
+	for (const auto& play : String::Split(input, "\n"))
 	{
 		mOpponentPlay.push_back(play[0] - 'A');
 		mMyPlay.push_back(play[2] - 'X');

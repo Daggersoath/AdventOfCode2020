@@ -2,11 +2,11 @@
 
 #include <stdexcept>
 
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 void Day3::ParseInput(std::string_view input)
 {
-    mRucksacks = SplitStringToVector(input, "\n");
+    mRucksacks = String::Split(input, "\n");
 }
 
 void Day3::ProcessChallengeOne()
@@ -15,9 +15,9 @@ void Day3::ProcessChallengeOne()
 
     for (const auto& rucksack : mRucksacks)
     {
-        if (std::vector<std::string_view> pouches; SplitPouches(rucksack, pouches))
+        if (StrViewVec pouches; SplitPouches(rucksack, pouches))
         {
-            auto commonItem = FindCommonChar(pouches);
+            auto commonItem = String::FindCommonChar(pouches);
             sum += CharToScore(commonItem);
         }
     }
@@ -29,13 +29,13 @@ void Day3::ProcessChallengeTwo()
     unsigned long long sum = 0;
     for (size_t i = 0; i < mRucksacks.size(); i += 3)
     {
-        auto commonItem = FindCommonChar({ mRucksacks.begin() + i, mRucksacks.begin() + i + 3 });
+        auto commonItem = String::FindCommonChar({ mRucksacks.begin() + i, mRucksacks.begin() + i + 3 });
         sum += CharToScore(commonItem);
     }
     mResults[1] = std::to_string(sum);
 }
 
-bool Day3::SplitPouches(const std::string_view& rucksack, std::vector<std::string_view>& output) const
+bool Day3::SplitPouches(const std::string_view& rucksack, StrViewVec& output) const
 {
     if (rucksack.size() & 1)
         return false;
@@ -49,5 +49,5 @@ bool Day3::SplitPouches(const std::string_view& rucksack, std::vector<std::strin
 
 unsigned int Day3::CharToScore(char& c)
 {
-    return (ToUpper(c) - 'A') + (IsUpper(c) * 26) + 1;
+    return (Char::ToUpper(c) - 'A') + (Char::IsUpper(c) * 26) + 1;
 }

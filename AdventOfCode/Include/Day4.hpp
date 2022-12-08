@@ -1,7 +1,6 @@
 #pragma once
 
 #include "AdventOfCodeDayChallenges.hpp"
-#include <vector>
 
 class Day4 : public AdventOfCodeDayChallenges
 {

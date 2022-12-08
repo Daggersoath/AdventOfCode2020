@@ -1,17 +1,18 @@
 #include "Day1.hpp"
 
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 #include <algorithm>
 #include <numeric>
+#include <string>
 
 void Day1::ParseInput(std::string_view input)
 {
-    for (const auto& pack : SplitStringToVector(input, "\n\n"))
+    for (const auto& pack : String::Split(input, "\n\n"))
     {
         mBackpacks.emplace_back();
         auto& backpack = mBackpacks.back();
-        for (const auto& item : SplitStringToVector(pack, "\n"))
+        for (const auto& item : String::Split(pack, "\n"))
         {
             backpack.push_back(item);
         }
@@ -25,9 +26,7 @@ unsigned long Day1::GetTotalFromLargestBackpacks(int count)
     {
         unsigned long total = 0;
         for (const auto& item : backpack)
-        {
-            total += ToULong(item);
-        }
+            total += String::ToULong(item);
         backpackTotals.push_back(total);
     }
 

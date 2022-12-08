@@ -30,9 +30,6 @@
     <ClCompile Include="src\Day4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\UtilFuncs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Day5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -45,6 +42,15 @@
     <ClCompile Include="src\Day6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Day7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Directory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StrUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Day3.hpp">
@@ -53,7 +59,7 @@
     <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Include\UtilFuncs.hpp">
+    <ClInclude Include="Include\VecUtils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\Day4.hpp">
@@ -74,6 +80,18 @@
     <ClInclude Include="Include\Day6.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Day7.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Directory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\StrUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Input\Day4_Input.txt">
@@ -87,5 +105,6 @@
     <Text Include="Input\Day1_Input.txt" />
     <Text Include="Input\Day2_Input.txt" />
     <Text Include="Input\Day6_Input.txt" />
+    <Text Include="Input\Day7_Input.txt" />
   </ItemGroup>
 </Project>

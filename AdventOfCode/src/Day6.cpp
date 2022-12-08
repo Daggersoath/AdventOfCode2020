@@ -1,6 +1,6 @@
 #include "Day6.hpp"
 
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 void Day6::ParseInput(std::string_view input)
 {
@@ -10,10 +10,10 @@ void Day6::ParseInput(std::string_view input)
 
 void Day6::ProcessChallengeOne()
 {
-    mResults[0] = std::to_string(FirstUniqueSequenceLocation(mInput, 4) + 1);
+    mResults[0] = std::to_string(String::FirstUniqueSequenceLocation(mInput, 4) + 1);
 }
 
 void Day6::ProcessChallengeTwo()
 {
-    mResults[1] = std::to_string(FirstUniqueSequenceLocation(mInput, 14) + 1);
+    mResults[1] = std::to_string(String::FirstUniqueSequenceLocation(mInput, 14) + 1);
 }

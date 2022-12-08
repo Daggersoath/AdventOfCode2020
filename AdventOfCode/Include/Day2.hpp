@@ -2,8 +2,6 @@
 
 #include "AdventOfCodeDayChallenges.hpp"
 
-#include <vector>
-
 class Day2 : public AdventOfCodeDayChallenges
 {
 public:

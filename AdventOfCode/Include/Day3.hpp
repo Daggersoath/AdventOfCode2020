@@ -1,7 +1,6 @@
 #pragma once
 
 #include "AdventOfCodeDayChallenges.hpp"
-#include <vector>
 
 class Day3 : public AdventOfCodeDayChallenges
 {
@@ -13,8 +12,8 @@ private:
     void ProcessChallengeOne() override;
     void ProcessChallengeTwo()override;
 
-    bool SplitPouches(const std::string_view& rucksack, std::vector<std::string_view>& output) const;
+    bool SplitPouches(const std::string_view& rucksack, StrViewVec& output) const;
     unsigned int CharToScore(char& c);
 
-    std::vector<std::string_view> mRucksacks;
+    StrViewVec mRucksacks;
 };

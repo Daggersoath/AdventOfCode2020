@@ -1,8 +1,10 @@
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 #include <charconv>
 
-unsigned long ToULong(std::string_view str)
+using namespace String;
+
+unsigned long String::ToULong(view str)
 {
     int out;
     const std::from_chars_result result = std::from_chars(str.data(), str.data() + str.size(), out);
@@ -13,18 +15,18 @@ unsigned long ToULong(std::string_view str)
     return out;
 }
 
-std::vector<std::string_view> SplitStringToVector(std::string_view input, const char* del)
+std::vector<view> String::Split(view input, view del)
 {
-    std::vector<std::string_view> output;
+    std::vector<view> output;
     size_t offset = 0;
-    size_t delSize = strlen(del);
 
     while (offset < input.size())
     {
         if (size_t pos = input.find(del, offset); pos != -1)
         {
-            output.push_back(input.substr(offset, pos - offset));
-            offset = pos + delSize;
+            if (auto substr = input.substr(offset, pos - offset); !substr.empty())
+                output.push_back(substr);
+            offset = pos + del.length();
             continue;
         }
         output.push_back(input.substr(offset));
@@ -34,7 +36,7 @@ std::vector<std::string_view> SplitStringToVector(std::string_view input, const 
     return output;
 }
 
-char FindCommonChar(std::vector<std::string_view> strVec)
+char String::FindCommonChar(std::vector<view> strVec)
 {
     if (strVec.empty())
         return 0;
@@ -48,7 +50,7 @@ char FindCommonChar(std::vector<std::string_view> strVec)
     return commonChars.empty() ? 0 : commonChars[0];
 }
 
-bool IsSequenceUnique(std::string_view sequence)
+bool String::IsSequenceUnique(view sequence)
 {
     const size_t seqLen = sequence.length();
     for (size_t i = 0; i < seqLen; ++i)
@@ -59,12 +61,12 @@ bool IsSequenceUnique(std::string_view sequence)
     return true;
 }
 
-size_t FirstUniqueSequenceLocation(std::string_view str, size_t seqLen)
+size_t String::FirstUniqueSequenceLocation(view str, size_t seqLen)
 {
     const size_t start = seqLen - 1;
     size_t index = start;
     for (; index < str.length(); ++index)
-        if (IsSequenceUnique(str.substr(index - start, seqLen)))
+        if (String::IsSequenceUnique(str.substr(index - start, seqLen)))
             break;
 
     return index;

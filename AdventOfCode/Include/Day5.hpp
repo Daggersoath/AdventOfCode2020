@@ -3,7 +3,6 @@
 #include "AdventOfCodeDayChallenges.hpp"
 
 #include <string>
-#include <vector>
 
 class Day5 : public AdventOfCodeDayChallenges {
 public:

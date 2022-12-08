@@ -1,11 +1,11 @@
 #include "Day5.hpp"
 
-#include "UtilFuncs.hpp"
+#include "StrUtils.h"
 
 void Day5::ParseInput(std::string_view input)
 {
     // Input format is stacks and moves seperated by two new lines
-    auto mixedInput = SplitStringToVector(input, "\n\n");
+    auto mixedInput = String::Split(input, "\n\n");
     ParseStacks(mixedInput[0]);
     ParseMoves(mixedInput[1]);
 }
@@ -14,7 +14,7 @@ void Day5::ParseStacks(std::string_view input)
 {
     // Each row of stacks is seperated by a newline
     // The last line is just the numbers which are in order so can be skipped
-    auto rows = SplitStringToVector(input, "\n");
+    auto rows = String::Split(input, "\n");
     rows.pop_back();
 
     // The number of characters is the amount of columns * 4 - 1
@@ -29,10 +29,10 @@ void Day5::ParseStacks(std::string_view input)
 void Day5::ParseMoves(std::string_view input)
 {
     // Each line is 1 move "move x from y to z"
-    for (const auto& move : SplitStringToVector(input, "\n"))
+    for (const auto& move : String::Split(input, "\n"))
     {
-        auto components = SplitStringToVector(move, " ");
-        mMoves.emplace_back(ToULong(components[1]), ToULong(components[3]) - 1, ToULong(components[5]) - 1);
+        auto components = String::Split(move, " ");
+        mMoves.emplace_back(String::ToULong(components[1]), String::ToULong(components[3]) - 1, String::ToULong(components[5]) - 1);
     }
 }
 
@@ -53,7 +53,6 @@ void Day5::ProcessChallengeOne()
     for (const auto& move : mMoves)
         DoMove(workingStacks, move, true);
 
-    mResults[0] = "";
     for (const auto& stack : workingStacks)
     {
         mResults[0] += stack.back();
@@ -66,9 +65,6 @@ void Day5::ProcessChallengeTwo()
     for (const auto& move : mMoves)
         DoMove(workingStacks, move, false);
 
-    mResults[1] = "";
     for (const auto& stack : workingStacks)
-    {
         mResults[1] += stack.back();
-    }
 }

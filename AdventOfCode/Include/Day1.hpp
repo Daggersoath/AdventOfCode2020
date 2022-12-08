@@ -2,8 +2,6 @@
 
 #include "AdventOfCodeDayChallenges.hpp"
 
-#include <vector>
-
 class Day1 : public AdventOfCodeDayChallenges
 {
 public:
@@ -17,5 +15,5 @@ private:
     void ProcessChallengeOne() override;
     void ProcessChallengeTwo() override;
 
-    std::vector<std::vector<std::string_view>> mBackpacks;
+    std::vector<StrViewVec> mBackpacks;
 };
