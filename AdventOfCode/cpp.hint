@@ -1,0 +1,4 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define DAY_START(day) class Day##day : public AdventOfCodeDayChallenges { public: Day##day() : AdventOfCodeDayChallenges(day) {}private: virtual void ParseInput(std::string_view input) = 0; virtual void ProcessChallengeOne() = 0; virtual void ProcessChallengeTwo() = 0;

@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>;include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>;include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -105,7 +107,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories);include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -123,7 +125,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VisualStudioTestProjects\AdventOfCode\AdventOfCode\Include;%(AdditionalIncludeDirectories);include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -141,39 +143,58 @@
     <ClCompile Include="src\Days\Day3.cpp" />
     <ClCompile Include="src\Days\Day4.cpp" />
     <ClCompile Include="src\Days\Day5.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\Days\Day6.cpp" />
     <ClCompile Include="src\Days\Day7.cpp" />
     <ClCompile Include="src\Days\Day8.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\Directory.cpp" />
     <ClCompile Include="src\StrUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp" />
+    <ClInclude Include="Include\Days\Day1.hpp" />
     <ClInclude Include="Include\Days\Day2.hpp" />
-    <ClInclude Include="Include\Days\Day6.hpp" />
-    <ClInclude Include="Include\Days\Day7.hpp" />
-    <ClInclude Include="Include\Days\Day8.hpp" />
-    <ClInclude Include="Include\Directory.h" />
-    <ClInclude Include="Include\StrUtils.h" />
-    <ClInclude Include="Include\TypeDefs.h" />
-    <ClInclude Include="Input\Day3_Input.txt" />
     <ClInclude Include="Include\Days\Day3.hpp" />
     <ClInclude Include="Include\Days\Day4.hpp" />
     <ClInclude Include="Include\Days\Day5.hpp" />
+    <ClInclude Include="Include\Days\Day6.hpp" />
+    <ClInclude Include="Include\Days\Day7.hpp" />
+    <ClInclude Include="Include\Days\Day8.hpp" />
+    <ClInclude Include="Include\Days\Day8.hpp" />
+    <ClInclude Include="Include\Days\Day9.hpp" />
+    <ClInclude Include="Include\Days\Day10.hpp" />
+    <ClInclude Include="Include\Days\Day11.hpp" />
+    <ClInclude Include="Include\Days\Day12.hpp" />
+    <ClInclude Include="Include\Days\Day13.hpp" />
+    <ClInclude Include="Include\Days\Day14.hpp" />
+    <ClInclude Include="Include\Days\Day15.hpp" />
+    <ClInclude Include="Include\Days\Day16.hpp" />
+    <ClInclude Include="Include\Days\Day17.hpp" />
+    <ClInclude Include="Include\Days\Day18.hpp" />
+    <ClInclude Include="Include\Days\Day19.hpp" />
+    <ClInclude Include="Include\Days\Day20.hpp" />
+    <ClInclude Include="Include\Days\Day21.hpp" />
+    <ClInclude Include="Include\Days\Day22.hpp" />
+    <ClInclude Include="Include\Days\Day23.hpp" />
+    <ClInclude Include="Include\Days\Day24.hpp" />
+    <ClInclude Include="Include\Days\Day25.hpp" />
+    <ClInclude Include="Include\Directory.h" />
+    <ClInclude Include="Include\StrUtils.h" />
+    <ClInclude Include="Include\TypeDefs.h" />
     <ClInclude Include="Include\VecUtils.hpp" />
-    <ClInclude Include="Include\Days\Day1.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Input\Day4_Input.txt" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1_Input.txt" />
     <Text Include="Input\Day2_Input.txt" />
+    <None Include="Input\Day3_Input.txt" />
+    <None Include="Input\Day4_Input.txt" />
     <Text Include="Input\Day5_Input.txt" />
     <Text Include="Input\Day6_Input.txt" />
     <Text Include="Input\Day7_Input.txt" />
     <Text Include="Input\Day8_Input.txt" />
+    <Text Include="Input\Day9_Input.txt" />
+    <Text Include="Input\Day10_Input.txt" />
+    <Text Include="Input\TestInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
