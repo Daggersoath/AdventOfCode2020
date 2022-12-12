@@ -135,32 +135,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Day1.cpp" />
-    <ClCompile Include="src\Day2.cpp" />
+    <ClCompile Include="src\Days\Day1.cpp" />
+    <ClCompile Include="src\Days\Day2.cpp" />
     <ClCompile Include="src\AdventOfCodeDayChallenges.cpp" />
-    <ClCompile Include="src\Day3.cpp" />
-    <ClCompile Include="src\Day4.cpp" />
-    <ClCompile Include="src\Day5.cpp" />
+    <ClCompile Include="src\Days\Day3.cpp" />
+    <ClCompile Include="src\Days\Day4.cpp" />
+    <ClCompile Include="src\Days\Day5.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\Day6.cpp" />
-    <ClCompile Include="src\Day7.cpp" />
+    <ClCompile Include="src\Days\Day6.cpp" />
+    <ClCompile Include="src\Days\Day7.cpp" />
+    <ClCompile Include="src\Days\Day8.cpp" />
     <ClCompile Include="src\Directory.cpp" />
     <ClCompile Include="src\StrUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp" />
-    <ClInclude Include="Include\Day2.hpp" />
-    <ClInclude Include="Include\Day6.hpp" />
-    <ClInclude Include="Include\Day7.hpp" />
+    <ClInclude Include="Include\Days\Day2.hpp" />
+    <ClInclude Include="Include\Days\Day6.hpp" />
+    <ClInclude Include="Include\Days\Day7.hpp" />
+    <ClInclude Include="Include\Days\Day8.hpp" />
     <ClInclude Include="Include\Directory.h" />
     <ClInclude Include="Include\StrUtils.h" />
     <ClInclude Include="Include\TypeDefs.h" />
     <ClInclude Include="Input\Day3_Input.txt" />
-    <ClInclude Include="Include\Day3.hpp" />
-    <ClInclude Include="Include\Day4.hpp" />
-    <ClInclude Include="Include\Day5.hpp" />
+    <ClInclude Include="Include\Days\Day3.hpp" />
+    <ClInclude Include="Include\Days\Day4.hpp" />
+    <ClInclude Include="Include\Days\Day5.hpp" />
     <ClInclude Include="Include\VecUtils.hpp" />
-    <ClInclude Include="Include\Day1.hpp" />
+    <ClInclude Include="Include\Days\Day1.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Input\Day4_Input.txt" />
@@ -171,6 +173,7 @@
     <Text Include="Input\Day5_Input.txt" />
     <Text Include="Input\Day6_Input.txt" />
     <Text Include="Input\Day7_Input.txt" />
+    <Text Include="Input\Day8_Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

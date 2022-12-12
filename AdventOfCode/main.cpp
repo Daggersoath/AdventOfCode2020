@@ -1,10 +1,10 @@
-#include "Day1.hpp"
-#include "Day2.hpp"
-#include "Day3.hpp"
-#include "Day4.hpp"
-#include "Day5.hpp"
-#include "Day6.hpp"
-#include "Day7.hpp"
+#include "Days/Day1.hpp"
+#include "Days/Day2.hpp"
+#include "Days/Day3.hpp"
+#include "Days/Day4.hpp"
+#include "Days/Day5.hpp"
+#include "Days/Day6.hpp"
+#include "Days/Day7.hpp"
 
 #define RUN_DAY(day, res1, res2) Day##day d##day;\
     d##day.Run("Input/Day"#day"_Input.txt");\
