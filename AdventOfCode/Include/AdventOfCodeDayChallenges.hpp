@@ -21,3 +21,11 @@ protected:
     std::string mResults[RESULT_COUNT];
     const uint64_t mDay = ~0ull;
 };
+
+#define DAY_START(day) class Day##day : public AdventOfCodeDayChallenges { \
+public:\
+    Day##day() : AdventOfCodeDayChallenges(day) {}\
+private:\
+    virtual void ParseInput(std::string_view input) override;\
+    virtual void ProcessChallengeOne() override;\
+    virtual void ProcessChallengeTwo() override;

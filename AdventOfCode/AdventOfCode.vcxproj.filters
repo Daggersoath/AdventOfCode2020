@@ -51,6 +51,9 @@
     <ClCompile Include="src\StrUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Include\Day8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Day3.hpp">
@@ -92,11 +95,66 @@
     <ClInclude Include="Include\StrUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Day8.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day9.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day10.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day12.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day13.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day14.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day15.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day16.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day17.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day18.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day19.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day20.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day21.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day22.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day23.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day24.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Day25.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Input\Day4_Input.txt">
       <Filter>Input</Filter>
     </None>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day5_Input.txt">
@@ -106,5 +164,9 @@
     <Text Include="Input\Day2_Input.txt" />
     <Text Include="Input\Day6_Input.txt" />
     <Text Include="Input\Day7_Input.txt" />
+    <Text Include="Input\Day8_Input.txt" />
+    <Text Include="Input\Day9_Input.txt" />
+    <Text Include="Input\Day10_Input.txt" />
+    <Text Include="Input\TestInput.txt" />
   </ItemGroup>
 </Project>
