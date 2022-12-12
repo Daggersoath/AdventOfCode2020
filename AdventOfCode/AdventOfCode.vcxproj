@@ -137,51 +137,54 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Include\Day8.cpp" />
-    <ClCompile Include="src\Day1.cpp" />
-    <ClCompile Include="src\Day2.cpp" />
+    <ClCompile Include="src\Days\Day1.cpp" />
+    <ClCompile Include="src\Days\Day2.cpp" />
     <ClCompile Include="src\AdventOfCodeDayChallenges.cpp" />
-    <ClCompile Include="src\Day3.cpp" />
-    <ClCompile Include="src\Day4.cpp" />
-    <ClCompile Include="src\Day5.cpp" />
+    <ClCompile Include="src\Days\Day3.cpp" />
+    <ClCompile Include="src\Days\Day4.cpp" />
+    <ClCompile Include="src\Days\Day5.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\Day6.cpp" />
-    <ClCompile Include="src\Day7.cpp" />
+    <ClCompile Include="src\Days\Day6.cpp" />
+    <ClCompile Include="src\Days\Day7.cpp" />
+    <ClCompile Include="src\Days\Day8.cpp" />
     <ClCompile Include="src\Directory.cpp" />
     <ClCompile Include="src\StrUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\AdventOfCodeDayChallenges.hpp" />
-    <ClInclude Include="Include\Day10.hpp" />
-    <ClInclude Include="Include\Day11.hpp" />
-    <ClInclude Include="Include\Day12.hpp" />
-    <ClInclude Include="Include\Day13.hpp" />
-    <ClInclude Include="Include\Day14.hpp" />
-    <ClInclude Include="Include\Day15.hpp" />
-    <ClInclude Include="Include\Day16.hpp" />
-    <ClInclude Include="Include\Day17.hpp" />
-    <ClInclude Include="Include\Day18.hpp" />
-    <ClInclude Include="Include\Day19.hpp" />
+    <ClInclude Include="Include\Days\Day10.hpp" />
+    <ClInclude Include="Include\Days\Day11.hpp" />
+    <ClInclude Include="Include\Days\Day12.hpp" />
+    <ClInclude Include="Include\Days\Day13.hpp" />
+    <ClInclude Include="Include\Days\Day14.hpp" />
+    <ClInclude Include="Include\Days\Day15.hpp" />
+    <ClInclude Include="Include\Days\Day16.hpp" />
+    <ClInclude Include="Include\Days\Day17.hpp" />
+    <ClInclude Include="Include\Days\Day18.hpp" />
+    <ClInclude Include="Include\Days\Day19.hpp" />
     <ClInclude Include="Include\Day2.hpp" />
-    <ClInclude Include="Include\Day20.hpp" />
-    <ClInclude Include="Include\Day21.hpp" />
-    <ClInclude Include="Include\Day22.hpp" />
-    <ClInclude Include="Include\Day23.hpp" />
-    <ClInclude Include="Include\Day24.hpp" />
-    <ClInclude Include="Include\Day25.hpp" />
+    <ClInclude Include="Include\Days\Day2.hpp" />
+    <ClInclude Include="Include\Days\Day20.hpp" />
+    <ClInclude Include="Include\Days\Day21.hpp" />
+    <ClInclude Include="Include\Days\Day22.hpp" />
+    <ClInclude Include="Include\Days\Day23.hpp" />
+    <ClInclude Include="Include\Days\Day24.hpp" />
+    <ClInclude Include="Include\Days\Day25.hpp" />
     <ClInclude Include="Include\Day6.hpp" />
     <ClInclude Include="Include\Day7.hpp" />
-    <ClInclude Include="Include\Day8.hpp" />
-    <ClInclude Include="Include\Day9.hpp" />
+    <ClInclude Include="Include\Days\Day6.hpp" />
+    <ClInclude Include="Include\Days\Day7.hpp" />
+    <ClInclude Include="Include\Days\Day8.hpp" />
+    <ClInclude Include="Include\Days\Day9.hpp" />
     <ClInclude Include="Include\Directory.h" />
     <ClInclude Include="Include\StrUtils.h" />
     <ClInclude Include="Include\TypeDefs.h" />
     <ClInclude Include="Input\Day3_Input.txt" />
-    <ClInclude Include="Include\Day3.hpp" />
-    <ClInclude Include="Include\Day4.hpp" />
-    <ClInclude Include="Include\Day5.hpp" />
+    <ClInclude Include="Include\Days\Day3.hpp" />
+    <ClInclude Include="Include\Days\Day4.hpp" />
+    <ClInclude Include="Include\Days\Day5.hpp" />
     <ClInclude Include="Include\VecUtils.hpp" />
-    <ClInclude Include="Include\Day1.hpp" />
+    <ClInclude Include="Include\Days\Day1.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />

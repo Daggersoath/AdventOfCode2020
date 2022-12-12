@@ -1,4 +1,4 @@
-#include "Day3.hpp"
+#include "Days/Day3.hpp"
 
 #include <stdexcept>
 

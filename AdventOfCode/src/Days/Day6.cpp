@@ -1,4 +1,4 @@
-#include "Day6.hpp"
+#include "Days/Day6.hpp"
 
 #include "StrUtils.h"
 

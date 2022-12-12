@@ -1,4 +1,4 @@
-#include "Day8.hpp"
+#include "Days/Day8.hpp"
 
 void Day8::ParseInput(std::string_view input)
 {

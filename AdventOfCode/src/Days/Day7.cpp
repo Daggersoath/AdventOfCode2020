@@ -1,4 +1,4 @@
-#include "Day7.hpp"
+#include "Days/Day7.hpp"
 
 #include "StrUtils.h"
 #include "VecUtils.hpp"
