@@ -43,7 +43,7 @@ int main()
     RUN_DAY(5, "ZWHVFWQWW", "HZFZCCWWV");
     RUN_DAY(6, "1140", "3495");
     RUN_DAY(7, "1770595", "2195372");
-    RUN_DAY_TEST(8, "", "");
+    RUN_DAY(8, "1816", "383520");
 
     return 0;
 }

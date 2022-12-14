@@ -15,7 +15,7 @@ void Day8::ParseInput(std::string_view input)
 
     for (size_t i = 0; i < lines.size(); ++i)
     {
-        Vector::Transform(lines[i], mTreeHeights[i], [](const char& c) { return static_cast<unsigned char>((c - '0')); });
+        Vector::Transform(lines[i], mTreeHeights[i], [](const char& c) { return static_cast<std::uint8_t>((c - '0')); });
         mTreeHeights[i].resize(lines[i].length());
     }
 }
@@ -53,16 +53,6 @@ void Day8::ProcessChallengeTwo()
     mResults[1] = std::to_string(max);
 }
 
-size_t Day8::CalculateViewScore(size_t x, size_t y)
-{
-    std::optional<size_t> distances[4]; // left, right, up, down;
-    FindBlockingTrees(x, y, distances);
-    return distances[0].value_or(x)
-        * distances[1].value_or(mTreeHeights[y].size() - x - 1)
-        * distances[2].value_or(y)
-        * distances[3].value_or(mTreeHeights.size() - y - 1);
-}
-
 bool Day8::IsTreeBlocking(size_t x, size_t y, std::uint8_t val)
 {
     if (x < 0 || y < 0 || y >= mTreeHeights.size() || x >= mTreeHeights[y].size())
@@ -85,4 +75,14 @@ void Day8::FindBlockingTrees(size_t x, size_t y, std::optional<size_t>* blocking
         if (!blockingDistances[3].has_value() && IsTreeBlocking(x, y + i, val))
             blockingDistances[3] = i;
     }
+}
+
+size_t Day8::CalculateViewScore(size_t x, size_t y)
+{
+    std::optional<size_t> distances[4]; // left, right, up, down;
+    FindBlockingTrees(x, y, distances);
+    return distances[0].value_or(x)
+        * distances[1].value_or(mTreeHeights[y].size() - x - 1)
+        * distances[2].value_or(y)
+        * distances[3].value_or(mTreeHeights.size() - y - 1);
 }

@@ -160,7 +160,6 @@
     <ClInclude Include="Include\Days\Day6.hpp" />
     <ClInclude Include="Include\Days\Day7.hpp" />
     <ClInclude Include="Include\Days\Day8.hpp" />
-    <ClInclude Include="Include\Days\Day8.hpp" />
     <ClInclude Include="Include\Days\Day9.hpp" />
     <ClInclude Include="Include\Days\Day10.hpp" />
     <ClInclude Include="Include\Days\Day11.hpp" />
@@ -195,6 +194,7 @@
     <Text Include="Input\Day9_Input.txt" />
     <Text Include="Input\Day10_Input.txt" />
     <Text Include="Input\TestInput.txt" />
+    <Text Include="src\Days\TestInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

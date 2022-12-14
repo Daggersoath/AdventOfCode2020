@@ -19,7 +19,7 @@ namespace Vector {
     }
 
     template<typename T, typename U, typename TransformFunc>
-    void Transform(const std::vector<T>& in, std::vector<U>& out, TransformFunc func)
+    void Transform(const T& in, U& out, TransformFunc func)
     {
         out.resize(in.size());
         std::transform(in.begin(), in.end(), out.begin(), func);

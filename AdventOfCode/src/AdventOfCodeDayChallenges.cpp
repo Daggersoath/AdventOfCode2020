@@ -21,9 +21,17 @@ void AdventOfCodeDayChallenges::Run(std::string_view filePath)
 
 void AdventOfCodeDayChallenges::Verify(std::string_view expectedResults[])
 {
+    std::cout << "Day " << mDay << " - ";
     for (size_t i = 0; i < RESULT_COUNT; ++i)
     {
-        std::cout << "Day " << mDay << " Challenge " << i << ": " << expectedResults[i] << " == " << mResults[i]
-            << " - " << (expectedResults[i] == mResults[i] ? "SUCCESS" : "FAIL") << std::endl;
+        if (expectedResults[i].empty())
+            continue;
+        if (expectedResults[i] != mResults[i])
+        {
+            std::cout << "FAILED Challenge " << i + 1 << ", Expected "
+                << expectedResults[i] << " but got " << mResults[i] << std::endl;
+            return;
+        }
     }
+    std::cout << "SUCCESS!" << std::endl;
 }

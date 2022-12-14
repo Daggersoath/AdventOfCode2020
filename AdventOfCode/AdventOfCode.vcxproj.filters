@@ -50,6 +50,15 @@
   <ItemGroup>
     <None Include="Input\Day3_Input.txt" />
     <None Include="Input\Day4_Input.txt" />
+    <ClInclude Include="Include\Days\Day7.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Days\Day6.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Days\Day2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1_Input.txt" />
@@ -61,5 +70,6 @@
     <Text Include="Input\Day9_Input.txt" />
     <Text Include="Input\Day10_Input.txt" />
     <Text Include="Input\TestInput.txt" />
+    <Text Include="src\Days\TestInput.txt" />
   </ItemGroup>
 </Project>
